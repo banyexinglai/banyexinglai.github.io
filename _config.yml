@@ -15,6 +15,6 @@ logo: "/img/logo_round.png"
 # Build settings
 markdown:          kramdown
 paginate:          30
-paginate_path:     "/posts/page:num/"
+paginate_path:     "/podcasts/page:num/"
 plugins:
   - jekyll-paginate

@@ -17,9 +17,21 @@ layout: default
           {% if page.subtitle %}
           <h2 class="subheading">{{ page.subtitle }}</h2>
           {% endif %}
-          <span class="meta">Posted by
-            <a href="#">Start Bootstrap</a>
-            on {{ page.date | date: '%B %d, %Y' }}</span>
+          <span class="meta">Hosted by
+            {% if page.hosts %}
+              {{ page.hosts }}
+            {% else %}
+              {{ site.author }}
+            {% endif %}
+            on {{ page.date | date: '%b %d, %Y' }}.
+
+            Duration:
+            {% if page.seconds >= 3600 %}
+              {{ page.seconds | divided_by: 3600 }}h
+            {% endif %}
+            {{ page.seconds | modulo: 3600 | divided_by: 60 }}m
+            {{ page.seconds | modulo: 3600 | modulo: 60 }}s
+          </span>
         </div>
       </div>
     </div>
