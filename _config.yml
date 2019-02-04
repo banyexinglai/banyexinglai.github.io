@@ -6,6 +6,7 @@ baseurl:           "/"
 url:               "https://banyexinglai.com"
 
 logo: "/img/logo_round.png"
+podcast_feed: "https://banyexinglai.podbean.com/feed.xml"
 
 
 # Build settings
