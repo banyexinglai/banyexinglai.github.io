@@ -10,4 +10,4 @@ background: '/img/bg-about.jpg'
 
 我们的同名公众号是「**半夜醒来**」。
 
-欢迎使用泛用型播客客户端订阅我们：[RSS Feed]({{ site.podcast_feed }})。
+欢迎在各种泛用型播客客户端搜索订阅我们，或者直接使用这个[RSS源]({{ site.podcast_feed }})订阅。
