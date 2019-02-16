@@ -50,12 +50,14 @@ layout: default
               {% endif %}
               on {{ post.date | date: '%b %d, %Y' }}.
 
-              Duration:
-              {% if post.seconds >= 3600 %}
-                {{ post.seconds | divided_by: 3600 }}h
+              {% if post.seconds > 0 %}
+                Duration:
+                {% if post.seconds >= 3600 %}
+                  {{ post.seconds | divided_by: 3600 }}h
+                {% endif %}
+                {{ post.seconds | modulo: 3600 | divided_by: 60 }}m
+                {{ post.seconds | modulo: 3600 | modulo: 60 }}s
               {% endif %}
-              {{ post.seconds | modulo: 3600 | divided_by: 60 }}m
-              {{ post.seconds | modulo: 3600 | modulo: 60 }}s
             </p>
           </article>
 

@@ -25,12 +25,14 @@ layout: default
             {% endif %}
             on {{ page.date | date: '%b %d, %Y' }}.
 
-            Duration:
-            {% if page.seconds >= 3600 %}
-              {{ page.seconds | divided_by: 3600 }}h
+            {% if page.seconds > 0 %}
+              Duration:
+              {% if page.seconds >= 3600 %}
+                {{ page.seconds | divided_by: 3600 }}h
+              {% endif %}
+              {{ page.seconds | modulo: 3600 | divided_by: 60 }}m
+              {{ page.seconds | modulo: 3600 | modulo: 60 }}s
             {% endif %}
-            {{ page.seconds | modulo: 3600 | divided_by: 60 }}m
-            {{ page.seconds | modulo: 3600 | modulo: 60 }}s
           </span>
         </div>
       </div>
