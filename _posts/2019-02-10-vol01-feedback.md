@@ -5,7 +5,7 @@ subtitle: "关于套套"
 date: 2019-02-10 09:00:00 -0400
 hosts: "Bing"
 seconds: 0
-background: '/img/bg-post.jpg'
+background: '/img/vol.01/cover.jpg'
 ---
 
 第一期节目播出后，我们很惊喜地收到了听众反馈！这位听众指出我们没有讨论最常用的避孕方式：避孕套。这篇文章里我想简单谈谈这一避孕方式。

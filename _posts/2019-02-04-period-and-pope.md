@@ -5,7 +5,7 @@ subtitle: "关于短期避孕药、Planned Parenthood、及其它"
 date: 2019-02-04 05:00:00 -0400
 hosts: "Kang and Bing"
 seconds: 1254
-background: '/img/bg-post.jpg'
+background: '/img/vol.01/cover.jpg'
 ---
 
 <iframe src="https://www.podbean.com/media/player/6ax44-a6b422?from=yiiadmin&download=1&version=1&skin=1&btn-skin=104&auto=0&share=1&fonts=Helvetica&download=1&rtl=0&pbad=1" height="122" width="100%" frameborder="0" scrolling="no" data-name="pb-iframe-player"></iframe>
